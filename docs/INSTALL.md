@@ -15,7 +15,7 @@ root by default; a handful of external tools are pointed to via environment vari
 ## Setup
 
 ```bash
-git clone https://github.com/kimsh-1/cardprinter
+git clone https://github.com/gongnyang/cardprinter
 cd cardprinter
 
 # 1. Node deps (includes echarts for charts + puppeteer-core for render)

@@ -9,10 +9,9 @@
 
 [English](README.md) | **한국어**
 
-[![Stars](https://img.shields.io/github/stars/kimsh-1/cardprinter?style=flat)](https://github.com/kimsh-1/cardprinter/stargazers)
-[![License](https://img.shields.io/github/license/kimsh-1/cardprinter?style=flat)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/kimsh-1/cardprinter?style=flat)](https://github.com/kimsh-1/cardprinter/releases)
-[![Discord](https://img.shields.io/discord/0000000000?style=flat&label=discord)](#)
+[![Stars](https://img.shields.io/github/stars/gongnyang/cardprinter?style=flat)](https://github.com/gongnyang/cardprinter/stargazers)
+[![License](https://img.shields.io/github/license/gongnyang/cardprinter?style=flat)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/gongnyang/cardprinter?style=flat)](https://github.com/gongnyang/cardprinter/releases)
 
 *Canva 대량생성·Predis.ai·Ocoya의 오픈소스 대안 — 단, 결과물을 감이 아니라 물리적 품질 게이트로 검증한다.*
 
@@ -32,7 +31,7 @@
 
 ### 릴스 (9:16)
 
-https://github.com/kimsh-1/cardprinter/raw/main/docs/demo-reel.mp4
+https://github.com/gongnyang/cardprinter/raw/main/docs/demo-reel.mp4
 
 > 릴스는 캐러셀과 같은 카피 계약에서 파생되므로 두 포맷의 내용이 어긋나지 않는다.
 > (위 영상은 실제 파이프라인 산출물이며, GitHub이 `docs/demo-reel.mp4`를 인라인 렌더한다.)
@@ -114,7 +113,7 @@ TOPICS=topics.jsonl OUTROOT=~/out PARALLEL=3 bash scripts/factory/run_factory.sh
 
 ### 수동 설치
 ```bash
-git clone https://github.com/kimsh-1/cardprinter
+git clone https://github.com/gongnyang/cardprinter
 cd cardprinter
 # 폰트·venv·chrome 라이브러리 — docs/INSTALL.md 참고
 ```
@@ -148,7 +147,7 @@ PR 환영. 모든 렌더 변경은 `node scripts/gates/run_gates.mjs all <projec
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=kimsh-1/cardprinter&type=Date)](https://star-history.com/#kimsh-1/cardprinter&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=gongnyang/cardprinter&type=Date)](https://star-history.com/#gongnyang/cardprinter&Date)
 
 ## 📝 라이선스
 

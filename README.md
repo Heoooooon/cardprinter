@@ -9,10 +9,9 @@
 
 **English** | [한국어](README.ko.md)
 
-[![Stars](https://img.shields.io/github/stars/kimsh-1/cardprinter?style=flat)](https://github.com/kimsh-1/cardprinter/stargazers)
-[![License](https://img.shields.io/github/license/kimsh-1/cardprinter?style=flat)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/kimsh-1/cardprinter?style=flat)](https://github.com/kimsh-1/cardprinter/releases)
-[![Discord](https://img.shields.io/discord/0000000000?style=flat&label=discord)](#)
+[![Stars](https://img.shields.io/github/stars/gongnyang/cardprinter?style=flat)](https://github.com/gongnyang/cardprinter/stargazers)
+[![License](https://img.shields.io/github/license/gongnyang/cardprinter?style=flat)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/gongnyang/cardprinter?style=flat)](https://github.com/gongnyang/cardprinter/releases)
 
 *An open-source alternative to Canva bulk-create, Predis.ai, and Ocoya — but the output is measured against physical quality gates, not vibes.*
 
@@ -32,7 +31,7 @@
 
 ### Reels (9:16)
 
-https://github.com/kimsh-1/cardprinter/raw/main/docs/demo-reel.mp4
+https://github.com/gongnyang/cardprinter/raw/main/docs/demo-reel.mp4
 
 > Every carousel is derived from the same copy contract as its Reels cut, so the two never drift apart.
 > (The clip above is a real pipeline output; GitHub renders `docs/demo-reel.mp4` inline.)
@@ -115,7 +114,7 @@ a `PASS` marker. **Full guide → [docs/FACTORY.md](docs/FACTORY.md).**
 
 ### Manual
 ```bash
-git clone https://github.com/kimsh-1/cardprinter
+git clone https://github.com/gongnyang/cardprinter
 cd cardprinter
 # fonts, venv, chrome libs — see docs/INSTALL.md
 ```
@@ -149,7 +148,7 @@ PRs welcome. Every rendering change must pass `node scripts/gates/run_gates.mjs 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=kimsh-1/cardprinter&type=Date)](https://star-history.com/#kimsh-1/cardprinter&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=gongnyang/cardprinter&type=Date)](https://star-history.com/#gongnyang/cardprinter&Date)
 
 ## 📝 License
 
