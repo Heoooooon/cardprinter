@@ -107,6 +107,28 @@ a `PASS` marker. **Full guide → [docs/FACTORY.md](docs/FACTORY.md).**
 
 ## 📥 Installation
 
+### OmO / Senpi (this fork)
+
+This fork packages [gongnyang's original MIT CardPrinter](https://github.com/gongnyang/cardprinter) as an
+OmO/Senpi git skill package. `package.json` registers `skills/cardprinter` through `pi.skills`; the original
+root `SKILL.md` and pipeline stay in place. Add the branch to the `packages` array in `~/.omo/agent/settings.json`:
+
+```json
+"packages": ["git:github.com/Heoooooon/cardprinter@omo-package"]
+```
+
+Then, from the package root:
+
+```bash
+bash skills/cardprinter/scripts/setup.sh   # local deps only: scripts/node_modules, .venv, .omo-cache (hyperframes 0.7.26)
+node skills/cardprinter/scripts/run.mjs --input skills/cardprinter/examples/dental-column/input.json --out omo-out/dental-column
+node scripts/verify.mjs                    # real Senpi loader discovery check
+```
+
+Inputs: a topic (with researched `facts[]`), a clinic column, or a doctor interview transcript (SRT/VTT/text) plus a
+clinic profile. Outputs: `out/card-NN.png` (4:5), `out/short.mp4` (9:16), `caption.txt`, `compliance.json`.
+See [skills/cardprinter/references/io.md](skills/cardprinter/references/io.md).
+
 ### Requirements
 - Node.js 20+
 - Python 3.11+ venv (for pixel-level gates + `rembg` cutouts)
@@ -153,3 +175,5 @@ PRs welcome. Every rendering change must pass `node scripts/gates/run_gates.mjs 
 ## 📝 License
 
 Code: MIT. Bundled fonts ship under their own OFL/Apache licenses — see [docs/FONT-LICENSES.md](docs/FONT-LICENSES.md).
+Original CardPrinter by [gongnyang](https://github.com/gongnyang/cardprinter) (`Copyright (c) 2026 gongnyang`, preserved in [LICENSE](LICENSE)).
+OmO/Senpi packaging and the clinic adapter are maintained in [this fork](https://github.com/Heoooooon/cardprinter).

@@ -14,8 +14,10 @@ if (CHROME_LIBS && !(process.env.LD_LIBRARY_PATH || "").includes(CHROME_LIBS)) {
 }
 
 function findChrome() {
+  if (process.env.CARDSHORTS_CHROME) return process.env.CARDSHORTS_CHROME;
   const pats = [
     `${process.env.HOME}/.cache/hyperframes/chrome/chrome-headless-shell/*/chrome-headless-shell-linux64/chrome-headless-shell`,
+    `${process.env.HOME}/.cache/hyperframes/chrome/chrome-headless-shell/*/chrome-headless-shell-mac-*/chrome-headless-shell`,
     `${process.env.HOME}/.cache/ms-playwright/chromium_headless_shell-*/chrome-linux/headless_shell`,
   ];
   for (const p of pats) { const m = globSync(p); if (m.length) return m.sort().pop(); }

@@ -34,3 +34,7 @@ summary.json
 .omc/
 .cache/
 *.orig
+
+# OMO adapter local caches / sample outputs
+.omo-cache/
+omo-out/
