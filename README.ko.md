@@ -106,6 +106,28 @@ TOPICS=topics.jsonl OUTROOT=~/out PARALLEL=3 bash scripts/factory/run_factory.sh
 
 ## 📥 설치
 
+### OmO / Senpi (이 포크)
+
+이 포크는 [gongnyang의 원본 MIT CardPrinter](https://github.com/gongnyang/cardprinter)를 OmO/Senpi git 스킬 패키지로
+제공한다. `package.json`의 `pi.skills`가 `skills/cardprinter`를 등록하고, 원본 루트 `SKILL.md`와 파이프라인은 그대로다.
+`~/.omo/agent/settings.json`의 `packages` 배열에 브랜치를 추가한다:
+
+```json
+"packages": ["git:github.com/Heoooooon/cardprinter@omo-package"]
+```
+
+패키지 루트에서:
+
+```bash
+bash skills/cardprinter/scripts/setup.sh   # 로컬 의존성만: scripts/node_modules, .venv, .omo-cache(hyperframes 0.7.26)
+node skills/cardprinter/scripts/run.mjs --input skills/cardprinter/examples/dental-column/input.json --out omo-out/dental-column
+node scripts/verify.mjs                    # 실제 Senpi 로더 발견 검사
+```
+
+입력: 주제(리서치한 `facts[]` 포함)·병원 칼럼·원장 인터뷰 대본(SRT/VTT/텍스트) + 병원 프로필.
+출력: `out/card-NN.png`(4:5), `out/short.mp4`(9:16), `caption.txt`, `compliance.json`(의료광고 위험 표현).
+[skills/cardprinter/references/io.md](skills/cardprinter/references/io.md) 참고.
+
 ### 요구사항
 - Node.js 20+
 - Python 3.11+ venv (픽셀 게이트 + `rembg` 누끼용)
@@ -152,3 +174,5 @@ PR 환영. 모든 렌더 변경은 `node scripts/gates/run_gates.mjs all <projec
 ## 📝 라이선스
 
 코드: MIT. 번들 폰트는 각자의 OFL/Apache 라이선스를 따른다 — [docs/FONT-LICENSES.md](docs/FONT-LICENSES.md) 참고.
+원본 CardPrinter 제작자는 [gongnyang](https://github.com/gongnyang/cardprinter)이며 [LICENSE](LICENSE)의 `Copyright (c) 2026 gongnyang` 고지를 보존한다.
+OmO/Senpi 패키징과 병원용 어댑터는 [이 포크](https://github.com/Heoooooon/cardprinter)에서 관리한다.

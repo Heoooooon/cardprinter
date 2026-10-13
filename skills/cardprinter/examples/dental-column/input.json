@@ -1,0 +1,15 @@
+{
+  "mode": "column",
+  "topic": "임플란트 수술 후 첫 일주일 관리법",
+  "text_file": "column.md",
+  "tier": "editorial",
+  "clinic": {
+    "name": "샘플치과",
+    "region": "서울 샘플구",
+    "phone": "02-000-0000",
+    "doctor": "김샘플 원장",
+    "handle": "@sample_dental",
+    "brand_color": "#1F5FAE"
+  },
+  "hashtags": ["임플란트", "임플란트관리", "샘플치과"]
+}

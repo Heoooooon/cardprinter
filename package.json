@@ -1,0 +1,22 @@
+{
+  "name": "cardprinter",
+  "version": "1.0.0",
+  "description": "한국어 우선 카드뉴스 캐러셀(4:5) + 9:16 릴스 생성 스킬 for OmO/Senpi — 치과·병원 칼럼/인터뷰/주제 입력 어댑터 포함.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heoooooon/cardprinter.git"
+  },
+  "license": "MIT",
+  "author": "gongnyang",
+  "keywords": ["omo", "omo-plugin", "skill", "cardnews", "carousel", "reels", "dental"],
+  "scripts": {
+    "omo:setup": "bash skills/cardprinter/scripts/setup.sh",
+    "omo:run": "node skills/cardprinter/scripts/run.mjs",
+    "omo:sample": "node skills/cardprinter/scripts/run.mjs --input skills/cardprinter/examples/dental-column/input.json --out omo-out/dental-column",
+    "verify": "node scripts/verify.mjs"
+  },
+  "pi": {
+    "skills": ["skills/cardprinter"]
+  }
+}

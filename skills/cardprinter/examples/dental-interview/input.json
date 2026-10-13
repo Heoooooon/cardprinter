@@ -1,0 +1,13 @@
+{
+  "mode": "interview",
+  "topic": "스케일링, 얼마나 자주 받아야 할까",
+  "text_file": "transcript.srt",
+  "tier": "news",
+  "clinic": {
+    "name": "샘플치과",
+    "region": "서울 샘플구",
+    "phone": "02-000-0000",
+    "doctor": "김샘플 원장",
+    "handle": "@sample_dental"
+  }
+}
